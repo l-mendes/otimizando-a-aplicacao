@@ -1,4 +1,5 @@
 import { Button } from "./Button";
+import { Header } from './Header';
 
 interface SideBarProps {
   genres: Array<{
@@ -17,7 +18,7 @@ export function SideBar({
 }: SideBarProps) {
   return (
     <nav className="sidebar">
-      <span>Watch<p>Me</p></span>
+      <Header />
 
       <div className="buttons-container">
         {genres.map(genre => (
